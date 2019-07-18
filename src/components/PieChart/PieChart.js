@@ -139,7 +139,7 @@ class PieChart extends PureComponent<Props, State> {
 
     /** Event Handling & Dispatching. */
     eventDispatcher.on('legendClick', d => this.setState({ data: d }));
-    eventDispatcher.on('pieClick', () => {});
+    eventDispatcher.on('pieClick', () => { hey });
     eventDispatcher.on('pieMouseOver', () => {});
     eventDispatcher.on('pieMouseOut', () => {});
   }

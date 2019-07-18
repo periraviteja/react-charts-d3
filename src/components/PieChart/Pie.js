@@ -138,7 +138,7 @@ class Pie extends PureComponent<Props> {
       eventDispatcher.apply('pieMouseOver', this, [d]);
     });
 
-    arcEnter.on('mouseover', d => {
+    arcEnter.on('mouseout', d => {
       // $FlowFixMe
       eventDispatcher.apply('pieMouseOut', this, [d]);
     });
