@@ -136,6 +136,10 @@ class PieChart extends PureComponent<Props, State> {
       .attr('height', h + m.top + m.bottom)
       .selectAll('.wrapper')
       .attr('transform', `translate(${+m.left}, ${+m.top})`);
+    
+    svg.append("text")
+      .attr("text-anchor", "middle")
+      .text("$500,000" + "Maverick Score Prediction");  
 
     /** Event Handling & Dispatching. */
     eventDispatcher.on('legendClick', d => this.setState({ data: d }));
