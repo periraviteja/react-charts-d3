@@ -124,7 +124,12 @@ class Pie extends PureComponent<Props> {
           const midAngle = Math.atan2(centroid[1], centroid[0]);
           const x = Math.cos(midAngle) * labelOffset;
           return x > 0 ? 'start' : 'end';
-        });
+        })
+        
+        .attr("text-anchor", "middle")
+        .attr('font-size', '4em')
+        .attr('y', 20)
+        .text("$500,000" + "Maverick Score Prediction");
     }
 
     /** Event Handling & Dispatching */
